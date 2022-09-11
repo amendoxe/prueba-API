@@ -1,0 +1,17 @@
+body {
+	background-color: blanchedalmond;
+}
+
+main {
+	width: 400px;
+	display: flex;
+	margin: 0 auto;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+button {
+	width: 200px;
+	height: 50px;
+	background-color: blueviolet;
+	color: blanchedalmond;
+}
