@@ -39,3 +39,16 @@ function addNewDoggo() {
 }
 
 document.getElementById("dog-btn2").addEventListener("click", addNewDoggo);
+
+const doggos3 = document.getElementById("dog-target3");
+
+async function addNewDoggo() {
+	const promise = await fetch(DOG_URL);
+	const processedResponse = await promise.json();
+	const img = document.createElement("img");
+	img.src = processedResponse.message;
+	img.alt = "Cute doggo";
+	doggos3.appendChild(img);
+}
+
+document.getElementById("dog-btn3").addEventListener("click", addNewDoggo);
